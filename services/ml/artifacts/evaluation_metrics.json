@@ -1,0 +1,27 @@
+{
+  "model_version": "v1.2.0-rf",
+  "dataset_size": 6502,
+  "train_samples": 5266,
+  "test_samples": 1236,
+  "metrics": {
+    "baseline": {
+      "name": "Deterministic Queue Heuristic",
+      "mae": 345.46,
+      "rmse": 419.81,
+      "r2": -53.3889
+    },
+    "ridge_regression": {
+      "name": "Ridge Linear Regression",
+      "mae": 27.45,
+      "rmse": 35.11,
+      "r2": 0.6195
+    },
+    "random_forest": {
+      "name": "Random Forest Regressor",
+      "mae": 15.62,
+      "rmse": 24.68,
+      "r2": 0.812,
+      "mae_improvement_pct": 95.48
+    }
+  }
+}

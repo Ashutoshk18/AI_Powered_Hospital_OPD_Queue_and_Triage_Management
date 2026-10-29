@@ -1,0 +1,199 @@
+// Prisma Schema for Hospital OPD Queue & Triage Management System (Local & Testing)
+// For PostgreSQL production deployment, refer to schema.postgresql.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(uuid())
+  email        String    @unique
+  passwordHash String
+  fullName     String
+  role         String    @default("PATIENT") // ADMIN, RECEPTIONIST, DOCTOR, PATIENT
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  doctor       Doctor?
+  patient      Patient?
+  auditLogs    AuditLog[]
+  overrides    TriageOverride[]
+
+  @@map("users")
+}
+
+model Department {
+  id                     String         @id @default(uuid())
+  code                   String         @unique // CARD, ORTH, PEDI, GENM, DERM
+  name                   String
+  avgConsultationMinutes Int            @default(15)
+  isActive               Boolean        @default(true)
+  createdAt              DateTime       @default(now())
+
+  doctors                Doctor[]
+  appointments           Appointment[]
+  queueEntries           QueueEntry[]
+
+  @@map("departments")
+}
+
+model Doctor {
+  id               String         @id @default(uuid())
+  userId           String         @unique
+  user             User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  departmentId     String
+  department       Department     @relation(fields: [departmentId], references: [id], onDelete: Restrict)
+  specialization   String
+  experienceYears  Int            @default(1)
+  roomNumber       String
+  isAvailable      Boolean        @default(true)
+  createdAt        DateTime       @default(now())
+
+  appointments     Appointment[]
+  queueEntries     QueueEntry[]
+
+  @@map("doctors")
+}
+
+model Patient {
+  id                  String         @id @default(uuid())
+  userId              String?        @unique
+  user                User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
+  medicalRecordNumber String         @unique
+  fullName            String
+  gender              String
+  dateOfBirth         DateTime
+  phone               String
+  bloodGroup          String?
+  emergencyContact    String?
+  createdAt           DateTime       @default(now())
+
+  appointments        Appointment[]
+
+  @@index([phone])
+  @@map("patients")
+}
+
+model Appointment {
+  id           String            @id @default(uuid())
+  patientId    String
+  patient      Patient           @relation(fields: [patientId], references: [id], onDelete: Restrict)
+  doctorId     String
+  doctor       Doctor            @relation(fields: [doctorId], references: [id], onDelete: Restrict)
+  departmentId String
+  department   Department        @relation(fields: [departmentId], references: [id], onDelete: Restrict)
+  scheduledAt  DateTime
+  status       String            @default("SCHEDULED") // SCHEDULED, CHECKED_IN, IN_CONSULTATION, COMPLETED, CANCELLED, NO_SHOW
+  reason       String?
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+
+  queueEntry   QueueEntry?
+
+  @@index([doctorId, scheduledAt])
+  @@index([patientId, scheduledAt])
+  @@index([status])
+  @@map("appointments")
+}
+
+model QueueEntry {
+  id                         String              @id @default(uuid())
+  appointmentId              String              @unique
+  appointment                Appointment         @relation(fields: [appointmentId], references: [id], onDelete: Restrict)
+  departmentId               String
+  department                 Department          @relation(fields: [departmentId], references: [id], onDelete: Restrict)
+  doctorId                   String
+  doctor                     Doctor              @relation(fields: [doctorId], references: [id], onDelete: Restrict)
+  queueDate                  DateTime
+  tokenNumber                Int
+  tokenDisplay               String
+  status                     String              @default("WAITING") // WAITING, CALLED, IN_CONSULTATION, COMPLETED, CANCELLED, NO_SHOW
+  initialTriageTier          Int
+  currentTriageTier          Int                 @default(4)
+  dynamicPriorityScore       Float               @default(0.0)
+  checkInTime                DateTime            @default(now())
+  consultationStartTime      DateTime?
+  consultationEndTime        DateTime?
+  estimatedWaitMinutes       Int                 @default(15)
+  waitTimePredictionSource   String              @default("ML_MODEL") // ML_MODEL or FALLBACK_RULE
+  createdAt                  DateTime            @default(now())
+  updatedAt                  DateTime            @updatedAt
+
+  triageAssessment           TriageAssessment?
+  triageOverrides            TriageOverride[]
+  consultationRecord         ConsultationRecord?
+
+  @@unique([departmentId, queueDate, tokenNumber])
+  @@index([departmentId, status, queueDate])
+  @@index([doctorId, status])
+  @@map("queue_entries")
+}
+
+model TriageAssessment {
+  id                  String     @id @default(uuid())
+  queueEntryId        String     @unique
+  queueEntry          QueueEntry @relation(fields: [queueEntryId], references: [id], onDelete: Cascade)
+  systolicBP          Float?
+  diastolicBP         Float?
+  heartRate           Float?
+  oxygenSaturation    Float?
+  temperatureCelsius  Float?
+  painScore           Int?
+  respiratoryDistress Boolean    @default(false)
+  alteredMentalState  Boolean    @default(false)
+  calculatedTier      Int
+  explanation         String
+  assessedAt          DateTime   @default(now())
+
+  @@map("triage_assessments")
+}
+
+model TriageOverride {
+  id                 String     @id @default(uuid())
+  queueEntryId       String
+  queueEntry         QueueEntry @relation(fields: [queueEntryId], references: [id], onDelete: Cascade)
+  overriddenByUserId String
+  overriddenByUser   User       @relation(fields: [overriddenByUserId], references: [id], onDelete: Restrict)
+  previousTier       Int
+  newTier            Int
+  reason             String
+  overriddenAt       DateTime   @default(now())
+
+  @@map("triage_overrides")
+}
+
+model ConsultationRecord {
+  id                     String     @id @default(uuid())
+  queueEntryId           String     @unique
+  queueEntry             QueueEntry @relation(fields: [queueEntryId], references: [id], onDelete: Restrict)
+  chiefComplaint         String?
+  clinicalNotes          String
+  diagnosis              String?
+  prescriptionSummary    String?
+  actualDurationMinutes  Int
+  completedAt            DateTime   @default(now())
+
+  @@map("consultation_records")
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String
+  entityType String
+  entityId   String
+  metadata   String?
+  ipAddress  String?
+  timestamp  DateTime @default(now())
+
+  @@index([entityType, entityId])
+  @@index([timestamp])
+  @@map("audit_logs")
+}

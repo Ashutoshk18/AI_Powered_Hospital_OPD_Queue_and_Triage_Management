@@ -1,0 +1,90 @@
+version: '3.8'
+
+# AI-Powered Hospital OPD Queue and Triage Management System
+# Docker Compose for local development and demonstration.
+#
+# Usage:
+#   docker compose up --build
+#
+# Services:
+#   db          – PostgreSQL 16 database
+#   ml-service  – Python FastAPI ML inference service (port 8000)
+#   api         – Node.js Express REST API (port 5000)
+#   web         – React frontend served by Nginx (port 80)
+#
+# NOTE: For local development without Docker, use SQLite (see README).
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: opd_queue_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d opd_queue_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ml-service:
+    build:
+      context: ./services/ml
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./services/ml/artifacts:/app/artifacts:ro
+    environment:
+      MODEL_PATH: /app/artifacts/model_v1.joblib
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+      ml-service:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/opd_queue_db?schema=public
+      ML_SERVICE_URL: http://ml-service:8000
+      JWT_SECRET: change-this-in-production-to-a-long-random-string
+      JWT_EXPIRES_IN: 8h
+      PORT: 5000
+      CORS_ORIGIN: http://localhost
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:5000/api/v1/health', r => process.exit(r.statusCode === 200 ? 0 : 1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pgdata:

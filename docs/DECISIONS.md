@@ -37,3 +37,11 @@
   1. Reject check-in if ML is unavailable (Rejected: unacceptable in a hospital reception environment).
   2. Mock/hardcode a random prediction (Rejected: dishonest, violates academic integrity and clinical predictability).
 - **Consequences:** Guarantees 100% operational uptime for the reception check-in desk, with clear audit tracking of prediction provenance.
+
+
+---
+
+## ADR-005: Dual Database Support - SQLite for Zero-Friction Local Execution & PostgreSQL for Production
+- **Context:** Host environment permissions restrict starting background PostgreSQL services without elevated Windows Administrator rights.
+- **Decision:** Maintain `schema.prisma` configured for SQLite (`file:./dev.db`) for instant local development, zero-configuration testing, and self-contained examination demonstration, alongside `schema.postgresql.prisma` for containerized PostgreSQL production deployments.
+- **Consequences:** Eliminates external service failures during local demonstrations and automated tests while preserving identical relational schemas, foreign key cascades, and unique constraints.

@@ -1,0 +1,1644 @@
+{
+  "summary": {
+    "FCFS": {
+      "mean_wait_min": {
+        "mean": 317.2760000699784,
+        "std": 92.60296330747632,
+        "min": 131.76720094294888,
+        "max": 582.4209670694498
+      },
+      "median_wait_min": {
+        "mean": 318.19367559444095,
+        "std": 101.99512105341041,
+        "min": 122.94016390150017,
+        "max": 590.6143827968071
+      },
+      "p90_wait_min": {
+        "mean": 585.8973681360989,
+        "std": 166.40615055143346,
+        "min": 227.64143147353184,
+        "max": 1030.598452351067
+      },
+      "max_wait_min": {
+        "mean": 640.1234312070654,
+        "std": 175.69788631397375,
+        "min": 244.80962701885068,
+        "max": 1130.072843995376
+      },
+      "starvation_count": {
+        "mean": 39.64,
+        "std": 8.093849516762713,
+        "min": 22.0,
+        "max": 59.0
+      },
+      "utilization_pct": {
+        "mean": 97.29891018619686,
+        "std": 2.0035076609451123,
+        "min": 91.96168597587987,
+        "max": 99.98615725026657
+      },
+      "throughput_per_hour": {
+        "mean": 2.5452891369735595,
+        "std": 0.18110478118286952,
+        "min": 2.0987733087191556,
+        "max": 2.9705791103546053
+      }
+    },
+    "STATIC_PRIO": {
+      "mean_wait_min": {
+        "mean": 314.0354482479662,
+        "std": 98.06039321996266,
+        "min": 139.1269779197309,
+        "max": 624.8040708298996
+      },
+      "median_wait_min": {
+        "mean": 239.55299678545856,
+        "std": 128.83629570746834,
+        "min": 58.39787360462111,
+        "max": 692.3798304046704
+      },
+      "p90_wait_min": {
+        "mean": 718.5782229553665,
+        "std": 161.07704887821976,
+        "min": 441.31466099126243,
+        "max": 1170.1276025248033
+      },
+      "max_wait_min": {
+        "mean": 775.8193396052457,
+        "std": 164.23623674162556,
+        "min": 490.216533992775,
+        "max": 1271.3208366684944
+      },
+      "starvation_count": {
+        "mean": 31.5,
+        "std": 7.494664769020694,
+        "min": 17.0,
+        "max": 48.0
+      },
+      "utilization_pct": {
+        "mean": 97.29891018619686,
+        "std": 2.003507660945114,
+        "min": 91.96168597587987,
+        "max": 99.9861572502666
+      },
+      "throughput_per_hour": {
+        "mean": 2.5452891369735595,
+        "std": 0.1811047811828695,
+        "min": 2.0987733087191565,
+        "max": 2.9705791103546053
+      }
+    },
+    "DYNAMIC_AGING": {
+      "mean_wait_min": {
+        "mean": 317.5685867570505,
+        "std": 94.26746263868763,
+        "min": 137.33229841285936,
+        "max": 587.7001034760394
+      },
+      "median_wait_min": {
+        "mean": 323.4682889427741,
+        "std": 104.73624208178859,
+        "min": 144.49257362866086,
+        "max": 609.4861646863696
+      },
+      "p90_wait_min": {
+        "mean": 593.1868354533195,
+        "std": 165.39314926830286,
+        "min": 269.82854713032685,
+        "max": 1052.0141428938887
+      },
+      "max_wait_min": {
+        "mean": 655.0785429236536,
+        "std": 174.35751887945008,
+        "min": 325.5054683754699,
+        "max": 1141.3757019957925
+      },
+      "starvation_count": {
+        "mean": 39.26,
+        "std": 7.8659010926911614,
+        "min": 23.0,
+        "max": 58.0
+      },
+      "utilization_pct": {
+        "mean": 97.29891018619686,
+        "std": 2.003507660945118,
+        "min": 91.96168597587985,
+        "max": 99.9861572502666
+      },
+      "throughput_per_hour": {
+        "mean": 2.5452891369735595,
+        "std": 0.18110478118286946,
+        "min": 2.098773308719156,
+        "max": 2.9705791103546053
+      }
+    }
+  },
+  "days": {
+    "FCFS": [
+      {
+        "mean_wait_min": 256.53768265283156,
+        "median_wait_min": 256.1558817304924,
+        "p90_wait_min": 466.0836058197608,
+        "max_wait_min": 546.3860803009171,
+        "starvation_count": 35,
+        "utilization_pct": 99.74561842281112,
+        "throughput_per_hour": 2.593047262199782,
+        "day": 0
+      },
+      {
+        "mean_wait_min": 295.3157309845544,
+        "median_wait_min": 307.32365999199004,
+        "p90_wait_min": 595.4227050293807,
+        "max_wait_min": 630.1273271766609,
+        "starvation_count": 37,
+        "utilization_pct": 97.5443390010688,
+        "throughput_per_hour": 2.657685854422424,
+        "day": 1
+      },
+      {
+        "mean_wait_min": 367.596426148842,
+        "median_wait_min": 324.7294029989989,
+        "p90_wait_min": 709.5266336276711,
+        "max_wait_min": 747.1411589824738,
+        "starvation_count": 39,
+        "utilization_pct": 95.64395329696092,
+        "throughput_per_hour": 2.2563497134367365,
+        "day": 2
+      },
+      {
+        "mean_wait_min": 424.9684612648844,
+        "median_wait_min": 403.3985585127004,
+        "p90_wait_min": 839.3744711351643,
+        "max_wait_min": 881.4796262387072,
+        "starvation_count": 54,
+        "utilization_pct": 98.42147220647566,
+        "throughput_per_hour": 2.6569424621753495,
+        "day": 3
+      },
+      {
+        "mean_wait_min": 271.8064599511348,
+        "median_wait_min": 272.2672151615403,
+        "p90_wait_min": 489.4713962678037,
+        "max_wait_min": 522.4182631361788,
+        "starvation_count": 37,
+        "utilization_pct": 94.46369842926181,
+        "throughput_per_hour": 2.5252683172911836,
+        "day": 4
+      },
+      {
+        "mean_wait_min": 203.1524219619687,
+        "median_wait_min": 188.46603563179428,
+        "p90_wait_min": 359.0627252643193,
+        "max_wait_min": 461.41460558877975,
+        "starvation_count": 35,
+        "utilization_pct": 96.7840024908054,
+        "throughput_per_hour": 2.7734435256413916,
+        "day": 5
+      },
+      {
+        "mean_wait_min": 299.27106376311474,
+        "median_wait_min": 347.11560485812333,
+        "p90_wait_min": 535.6394210930404,
+        "max_wait_min": 642.8077195319813,
+        "starvation_count": 44,
+        "utilization_pct": 98.74755175737721,
+        "throughput_per_hour": 2.8276341382427668,
+        "day": 6
+      },
+      {
+        "mean_wait_min": 373.8332148411858,
+        "median_wait_min": 377.9059307245783,
+        "p90_wait_min": 670.367094053261,
+        "max_wait_min": 734.1763389693604,
+        "starvation_count": 43,
+        "utilization_pct": 96.64746226701155,
+        "throughput_per_hour": 2.327409321516233,
+        "day": 7
+      },
+      {
+        "mean_wait_min": 265.47830086804885,
+        "median_wait_min": 299.15379973909296,
+        "p90_wait_min": 471.6085083682937,
+        "max_wait_min": 501.7490683271034,
+        "starvation_count": 41,
+        "utilization_pct": 99.69374748295465,
+        "throughput_per_hour": 2.85760723479314,
+        "day": 8
+      },
+      {
+        "mean_wait_min": 131.76720094294888,
+        "median_wait_min": 122.94016390150017,
+        "p90_wait_min": 227.64143147353184,
+        "max_wait_min": 244.80962701885068,
+        "starvation_count": 22,
+        "utilization_pct": 98.4793329374157,
+        "throughput_per_hour": 2.9705791103546053,
+        "day": 9
+      },
+      {
+        "mean_wait_min": 231.79906047992202,
+        "median_wait_min": 185.1868219950727,
+        "p90_wait_min": 449.47376561647275,
+        "max_wait_min": 520.3700333512181,
+        "starvation_count": 33,
+        "utilization_pct": 99.98233269344577,
+        "throughput_per_hour": 2.70973440185038,
+        "day": 10
+      },
+      {
+        "mean_wait_min": 202.68163748849227,
+        "median_wait_min": 243.37702889978172,
+        "p90_wait_min": 355.1926533685467,
+        "max_wait_min": 398.6974086073019,
+        "starvation_count": 32,
+        "utilization_pct": 95.77513907407234,
+        "throughput_per_hour": 2.9219452449989887,
+        "day": 11
+      },
+      {
+        "mean_wait_min": 346.7507141965152,
+        "median_wait_min": 336.503822866602,
+        "p90_wait_min": 618.856522424901,
+        "max_wait_min": 661.6203631104006,
+        "starvation_count": 37,
+        "utilization_pct": 95.96538301024655,
+        "throughput_per_hour": 2.2047568918435028,
+        "day": 12
+      },
+      {
+        "mean_wait_min": 367.22673404275537,
+        "median_wait_min": 395.3861257136068,
+        "p90_wait_min": 689.9902496605657,
+        "max_wait_min": 732.7889632953314,
+        "starvation_count": 42,
+        "utilization_pct": 98.18954511118399,
+        "throughput_per_hour": 2.467325338531077,
+        "day": 13
+      },
+      {
+        "mean_wait_min": 334.4309964454031,
+        "median_wait_min": 315.2033318971397,
+        "p90_wait_min": 635.0029868876497,
+        "max_wait_min": 706.2730878569638,
+        "starvation_count": 41,
+        "utilization_pct": 95.14077569270252,
+        "throughput_per_hour": 2.45480261398871,
+        "day": 14
+      },
+      {
+        "mean_wait_min": 322.7159095365284,
+        "median_wait_min": 332.3945593056578,
+        "p90_wait_min": 610.5320641342861,
+        "max_wait_min": 636.5757508286932,
+        "starvation_count": 41,
+        "utilization_pct": 99.16586822532587,
+        "throughput_per_hour": 2.64710515181689,
+        "day": 15
+      },
+      {
+        "mean_wait_min": 363.98071136220574,
+        "median_wait_min": 331.9748954696941,
+        "p90_wait_min": 710.5675534787332,
+        "max_wait_min": 771.3107050921494,
+        "starvation_count": 46,
+        "utilization_pct": 94.03675742945366,
+        "throughput_per_hour": 2.4958299948876896,
+        "day": 16
+      },
+      {
+        "mean_wait_min": 341.20448411815045,
+        "median_wait_min": 355.9144806522422,
+        "p90_wait_min": 598.7905579142598,
+        "max_wait_min": 657.4787180649727,
+        "starvation_count": 45,
+        "utilization_pct": 99.98615725026657,
+        "throughput_per_hour": 2.3786509787256036,
+        "day": 17
+      },
+      {
+        "mean_wait_min": 391.7628293018798,
+        "median_wait_min": 377.9811568467327,
+        "p90_wait_min": 678.3506171261561,
+        "max_wait_min": 751.570602334353,
+        "starvation_count": 47,
+        "utilization_pct": 97.8620698261875,
+        "throughput_per_hour": 2.4349426381099715,
+        "day": 18
+      },
+      {
+        "mean_wait_min": 341.79115242754244,
+        "median_wait_min": 346.25735897016295,
+        "p90_wait_min": 592.5378865720525,
+        "max_wait_min": 608.0557206524502,
+        "starvation_count": 38,
+        "utilization_pct": 98.22681629414201,
+        "throughput_per_hour": 2.45040989950466,
+        "day": 19
+      },
+      {
+        "mean_wait_min": 552.3006351013984,
+        "median_wait_min": 562.1708397714345,
+        "p90_wait_min": 1030.598452351067,
+        "max_wait_min": 1130.072843995376,
+        "starvation_count": 59,
+        "utilization_pct": 98.80137446103595,
+        "throughput_per_hour": 2.386059378771842,
+        "day": 20
+      },
+      {
+        "mean_wait_min": 274.1322860463303,
+        "median_wait_min": 288.30917830122416,
+        "p90_wait_min": 417.63193515305795,
+        "max_wait_min": 432.1432468572827,
+        "starvation_count": 38,
+        "utilization_pct": 98.93513256438563,
+        "throughput_per_hour": 2.606988783298579,
+        "day": 21
+      },
+      {
+        "mean_wait_min": 503.1572241763518,
+        "median_wait_min": 565.7669604409483,
+        "p90_wait_min": 821.3038679586999,
+        "max_wait_min": 870.0446530211788,
+        "starvation_count": 54,
+        "utilization_pct": 99.35691517609435,
+        "throughput_per_hour": 2.5436024171462197,
+        "day": 22
+      },
+      {
+        "mean_wait_min": 430.9889234653897,
+        "median_wait_min": 451.3452126433217,
+        "p90_wait_min": 802.7591800282461,
+        "max_wait_min": 843.808496200448,
+        "starvation_count": 41,
+        "utilization_pct": 93.0756831382101,
+        "throughput_per_hour": 2.0987733087191556,
+        "day": 23
+      },
+      {
+        "mean_wait_min": 343.6119721715989,
+        "median_wait_min": 381.7380916297409,
+        "p90_wait_min": 578.2734356199695,
+        "max_wait_min": 599.0587681141265,
+        "starvation_count": 41,
+        "utilization_pct": 99.73528792034055,
+        "throughput_per_hour": 2.5743123941407857,
+        "day": 24
+      },
+      {
+        "mean_wait_min": 453.5023182556284,
+        "median_wait_min": 432.7258082884088,
+        "p90_wait_min": 862.9948313124015,
+        "max_wait_min": 952.5620025381394,
+        "starvation_count": 49,
+        "utilization_pct": 99.00514168971345,
+        "throughput_per_hour": 2.5936749961575574,
+        "day": 25
+      },
+      {
+        "mean_wait_min": 418.2193867060279,
+        "median_wait_min": 457.37925462581467,
+        "p90_wait_min": 797.2988498885143,
+        "max_wait_min": 884.0236857293207,
+        "starvation_count": 47,
+        "utilization_pct": 96.2644963998357,
+        "throughput_per_hour": 2.4066359288091412,
+        "day": 26
+      },
+      {
+        "mean_wait_min": 399.8023555414907,
+        "median_wait_min": 424.34845654838966,
+        "p90_wait_min": 674.4726787001271,
+        "max_wait_min": 759.7807954435502,
+        "starvation_count": 51,
+        "utilization_pct": 98.82016770848547,
+        "throughput_per_hour": 2.5128866502392206,
+        "day": 27
+      },
+      {
+        "mean_wait_min": 331.5107827520934,
+        "median_wait_min": 326.85661149737155,
+        "p90_wait_min": 638.4490728595464,
+        "max_wait_min": 687.3503385370069,
+        "starvation_count": 37,
+        "utilization_pct": 95.66391453937456,
+        "throughput_per_hour": 2.476174730772792,
+        "day": 28
+      },
+      {
+        "mean_wait_min": 227.58719451100518,
+        "median_wait_min": 252.39990231255916,
+        "p90_wait_min": 365.4758568755033,
+        "max_wait_min": 390.46726744244904,
+        "starvation_count": 34,
+        "utilization_pct": 96.8185670921615,
+        "throughput_per_hour": 2.8540768531590053,
+        "day": 29
+      },
+      {
+        "mean_wait_min": 225.66892842897036,
+        "median_wait_min": 200.8969358802158,
+        "p90_wait_min": 452.8341527166893,
+        "max_wait_min": 500.4129401773673,
+        "starvation_count": 31,
+        "utilization_pct": 96.40796071357899,
+        "throughput_per_hour": 2.6848531108576688,
+        "day": 30
+      },
+      {
+        "mean_wait_min": 205.48645294899268,
+        "median_wait_min": 218.6132513854571,
+        "p90_wait_min": 411.12972036180616,
+        "max_wait_min": 481.3731469879116,
+        "starvation_count": 28,
+        "utilization_pct": 92.17746795778369,
+        "throughput_per_hour": 2.4666990708596983,
+        "day": 31
+      },
+      {
+        "mean_wait_min": 582.4209670694498,
+        "median_wait_min": 590.6143827968071,
+        "p90_wait_min": 1023.4450332512577,
+        "max_wait_min": 1087.6979288158311,
+        "starvation_count": 58,
+        "utilization_pct": 99.08387004039302,
+        "throughput_per_hour": 2.314826516191076,
+        "day": 32
+      },
+      {
+        "mean_wait_min": 350.74827716952825,
+        "median_wait_min": 362.0473630238173,
+        "p90_wait_min": 604.8379479368583,
+        "max_wait_min": 699.0119120416035,
+        "starvation_count": 45,
+        "utilization_pct": 95.08946605372282,
+        "throughput_per_hour": 2.525268891112769,
+        "day": 33
+      },
+      {
+        "mean_wait_min": 350.70885249573456,
+        "median_wait_min": 370.93391485004116,
+        "p90_wait_min": 654.147005915114,
+        "max_wait_min": 679.3567022291267,
+        "starvation_count": 39,
+        "utilization_pct": 99.86298073974929,
+        "throughput_per_hour": 2.4644567115795786,
+        "day": 34
+      },
+      {
+        "mean_wait_min": 347.7232637949364,
+        "median_wait_min": 306.62318717032343,
+        "p90_wait_min": 720.5048945276646,
+        "max_wait_min": 817.2136196391726,
+        "starvation_count": 48,
+        "utilization_pct": 98.01083363074208,
+        "throughput_per_hour": 2.7594499898216207,
+        "day": 35
+      },
+      {
+        "mean_wait_min": 338.3099274935693,
+        "median_wait_min": 371.84502066299694,
+        "p90_wait_min": 557.2221531796868,
+        "max_wait_min": 586.8232306170205,
+        "starvation_count": 44,
+        "utilization_pct": 99.06866176425349,
+        "throughput_per_hour": 2.4035441916743427,
+        "day": 36
+      },
+      {
+        "mean_wait_min": 257.6865421350163,
+        "median_wait_min": 190.5547260897378,
+        "p90_wait_min": 580.5600411625592,
+        "max_wait_min": 609.8294969654263,
+        "starvation_count": 35,
+        "utilization_pct": 95.45999211846949,
+        "throughput_per_hour": 2.525477581488561,
+        "day": 37
+      },
+      {
+        "mean_wait_min": 198.89369172330416,
+        "median_wait_min": 203.65456916210275,
+        "p90_wait_min": 360.4630833537228,
+        "max_wait_min": 406.69151132488423,
+        "starvation_count": 33,
+        "utilization_pct": 95.89531209166168,
+        "throughput_per_hour": 2.748302531996379,
+        "day": 38
+      },
+      {
+        "mean_wait_min": 348.16136180715336,
+        "median_wait_min": 348.30519226242615,
+        "p90_wait_min": 659.4096499374403,
+        "max_wait_min": 758.8362289930012,
+        "starvation_count": 46,
+        "utilization_pct": 98.00711866343507,
+        "throughput_per_hour": 2.4035962389894237,
+        "day": 39
+      },
+      {
+        "mean_wait_min": 224.97422473009172,
+        "median_wait_min": 189.04291267842058,
+        "p90_wait_min": 468.2069298161951,
+        "max_wait_min": 505.5994465606989,
+        "starvation_count": 31,
+        "utilization_pct": 96.78092982374311,
+        "throughput_per_hour": 2.6663997575192404,
+        "day": 40
+      },
+      {
+        "mean_wait_min": 270.48976012662683,
+        "median_wait_min": 268.9428873882172,
+        "p90_wait_min": 534.2258999302595,
+        "max_wait_min": 584.0599561840768,
+        "starvation_count": 34,
+        "utilization_pct": 96.92710920858974,
+        "throughput_per_hour": 2.4188498005976564,
+        "day": 41
+      },
+      {
+        "mean_wait_min": 378.7353250928943,
+        "median_wait_min": 367.41075270707597,
+        "p90_wait_min": 665.9376408372033,
+        "max_wait_min": 719.1000935247009,
+        "starvation_count": 48,
+        "utilization_pct": 99.35918953932173,
+        "throughput_per_hour": 2.627760412114854,
+        "day": 42
+      },
+      {
+        "mean_wait_min": 289.25990447975835,
+        "median_wait_min": 307.48523453282996,
+        "p90_wait_min": 517.3500813553902,
+        "max_wait_min": 554.0910287608932,
+        "starvation_count": 36,
+        "utilization_pct": 91.96168597587987,
+        "throughput_per_hour": 2.3773730801071182,
+        "day": 43
+      },
+      {
+        "mean_wait_min": 233.22375066098243,
+        "median_wait_min": 229.9855237591156,
+        "p90_wait_min": 421.8130731066042,
+        "max_wait_min": 491.15575752449615,
+        "starvation_count": 38,
+        "utilization_pct": 97.70556720585118,
+        "throughput_per_hour": 2.6616018023707184,
+        "day": 44
+      },
+      {
+        "mean_wait_min": 181.6335801943312,
+        "median_wait_min": 167.5480934679989,
+        "p90_wait_min": 415.9633068573166,
+        "max_wait_min": 490.2868330144686,
+        "starvation_count": 26,
+        "utilization_pct": 98.4742777857155,
+        "throughput_per_hour": 2.667269151452167,
+        "day": 45
+      },
+      {
+        "mean_wait_min": 228.4139805752559,
+        "median_wait_min": 242.08891706725393,
+        "p90_wait_min": 400.8114837520014,
+        "max_wait_min": 443.7789499152973,
+        "starvation_count": 33,
+        "utilization_pct": 96.88218003915742,
+        "throughput_per_hour": 2.5281540781968594,
+        "day": 46
+      },
+      {
+        "mean_wait_min": 263.1124780360146,
+        "median_wait_min": 202.04960369600758,
+        "p90_wait_min": 552.9751671916554,
+        "max_wait_min": 610.2505786695633,
+        "starvation_count": 31,
+        "utilization_pct": 98.73420259857369,
+        "throughput_per_hour": 2.5581644790659044,
+        "day": 47
+      },
+      {
+        "mean_wait_min": 283.2760367384067,
+        "median_wait_min": 299.6215043549556,
+        "p90_wait_min": 550.3545022619319,
+        "max_wait_min": 602.2145693945564,
+        "starvation_count": 33,
+        "utilization_pct": 96.16584023805682,
+        "throughput_per_hour": 2.4591324669797143,
+        "day": 48
+      },
+      {
+        "mean_wait_min": 235.98842629167876,
+        "median_wait_min": 208.74365485953118,
+        "p90_wait_min": 449.9256292906034,
+        "max_wait_min": 471.82436266944785,
+        "starvation_count": 25,
+        "utilization_pct": 95.91215953235739,
+        "throughput_per_hour": 2.338621450157254,
+        "day": 49
+      }
+    ],
+    "STATIC_PRIO": [
+      {
+        "mean_wait_min": 278.8190586782124,
+        "median_wait_min": 107.93177637159174,
+        "p90_wait_min": 682.3765397607629,
+        "max_wait_min": 703.8884824293671,
+        "starvation_count": 23,
+        "utilization_pct": 99.74561842281115,
+        "throughput_per_hour": 2.5930472621997818,
+        "day": 0
+      },
+      {
+        "mean_wait_min": 283.5500249614436,
+        "median_wait_min": 158.5290861772392,
+        "p90_wait_min": 738.6664260718995,
+        "max_wait_min": 775.9678179921722,
+        "starvation_count": 30,
+        "utilization_pct": 97.5443390010688,
+        "throughput_per_hour": 2.6576858544224238,
+        "day": 1
+      },
+      {
+        "mean_wait_min": 418.75681031626505,
+        "median_wait_min": 376.30458492783754,
+        "p90_wait_min": 841.8084674005024,
+        "max_wait_min": 878.5302572573831,
+        "starvation_count": 33,
+        "utilization_pct": 95.64395329696089,
+        "throughput_per_hour": 2.2563497134367365,
+        "day": 2
+      },
+      {
+        "mean_wait_min": 433.40814332586166,
+        "median_wait_min": 442.49699866233095,
+        "p90_wait_min": 977.1022842583432,
+        "max_wait_min": 1031.5862875562902,
+        "starvation_count": 44,
+        "utilization_pct": 98.42147220647564,
+        "throughput_per_hour": 2.656942462175349,
+        "day": 3
+      },
+      {
+        "mean_wait_min": 259.4962507233823,
+        "median_wait_min": 228.534871578611,
+        "p90_wait_min": 628.9379658604197,
+        "max_wait_min": 676.1269251653075,
+        "starvation_count": 31,
+        "utilization_pct": 94.46369842926181,
+        "throughput_per_hour": 2.5252683172911836,
+        "day": 4
+      },
+      {
+        "mean_wait_min": 192.45277880389241,
+        "median_wait_min": 110.39040055575424,
+        "p90_wait_min": 526.7810802912926,
+        "max_wait_min": 655.2771303858298,
+        "starvation_count": 24,
+        "utilization_pct": 96.78400249080543,
+        "throughput_per_hour": 2.773443525641393,
+        "day": 5
+      },
+      {
+        "mean_wait_min": 260.13328108334747,
+        "median_wait_min": 103.61585604756526,
+        "p90_wait_min": 736.6072064445475,
+        "max_wait_min": 786.7371272387827,
+        "starvation_count": 26,
+        "utilization_pct": 98.74755175737718,
+        "throughput_per_hour": 2.8276341382427668,
+        "day": 6
+      },
+      {
+        "mean_wait_min": 390.2398792734226,
+        "median_wait_min": 274.16108209466654,
+        "p90_wait_min": 796.1616815633525,
+        "max_wait_min": 822.5259235627202,
+        "starvation_count": 33,
+        "utilization_pct": 96.64746226701152,
+        "throughput_per_hour": 2.327409321516233,
+        "day": 7
+      },
+      {
+        "mean_wait_min": 245.3222570681689,
+        "median_wait_min": 167.94373268400537,
+        "p90_wait_min": 602.0931113125398,
+        "max_wait_min": 641.8663552180753,
+        "starvation_count": 29,
+        "utilization_pct": 99.69374748295465,
+        "throughput_per_hour": 2.85760723479314,
+        "day": 8
+      },
+      {
+        "mean_wait_min": 139.1269779197309,
+        "median_wait_min": 58.98142006901628,
+        "p90_wait_min": 441.31466099126243,
+        "max_wait_min": 490.216533992775,
+        "starvation_count": 17,
+        "utilization_pct": 98.4793329374157,
+        "throughput_per_hour": 2.9705791103546053,
+        "day": 9
+      },
+      {
+        "mean_wait_min": 239.8535782149191,
+        "median_wait_min": 172.1041559439811,
+        "p90_wait_min": 638.1316615361426,
+        "max_wait_min": 719.7861578667005,
+        "starvation_count": 26,
+        "utilization_pct": 99.98233269344578,
+        "throughput_per_hour": 2.7097344018503797,
+        "day": 10
+      },
+      {
+        "mean_wait_min": 195.28861067266456,
+        "median_wait_min": 199.12777216958693,
+        "p90_wait_min": 586.2305843748321,
+        "max_wait_min": 638.1388899980197,
+        "starvation_count": 25,
+        "utilization_pct": 95.77513907407233,
+        "throughput_per_hour": 2.9219452449989882,
+        "day": 11
+      },
+      {
+        "mean_wait_min": 371.6912289683083,
+        "median_wait_min": 369.0208735650722,
+        "p90_wait_min": 733.1283216946388,
+        "max_wait_min": 960.8591546780688,
+        "starvation_count": 33,
+        "utilization_pct": 95.9653830102466,
+        "throughput_per_hour": 2.2047568918435028,
+        "day": 12
+      },
+      {
+        "mean_wait_min": 369.6943984230147,
+        "median_wait_min": 394.58153039426827,
+        "p90_wait_min": 854.7026917477483,
+        "max_wait_min": 928.605876842209,
+        "starvation_count": 37,
+        "utilization_pct": 98.18954511118399,
+        "throughput_per_hour": 2.4673253385310763,
+        "day": 13
+      },
+      {
+        "mean_wait_min": 336.88944639894714,
+        "median_wait_min": 329.3630005717241,
+        "p90_wait_min": 821.8991856547658,
+        "max_wait_min": 966.1524718941729,
+        "starvation_count": 35,
+        "utilization_pct": 95.14077569270258,
+        "throughput_per_hour": 2.4548026139887105,
+        "day": 14
+      },
+      {
+        "mean_wait_min": 291.5597962241221,
+        "median_wait_min": 179.61320792738033,
+        "p90_wait_min": 698.6203752669475,
+        "max_wait_min": 740.1250610348907,
+        "starvation_count": 34,
+        "utilization_pct": 99.16586822532587,
+        "throughput_per_hour": 2.6471051518168913,
+        "day": 15
+      },
+      {
+        "mean_wait_min": 381.49813262951636,
+        "median_wait_min": 395.09331505773656,
+        "p90_wait_min": 808.6694140778534,
+        "max_wait_min": 830.222679596073,
+        "starvation_count": 37,
+        "utilization_pct": 94.03675742945366,
+        "throughput_per_hour": 2.495829994887691,
+        "day": 16
+      },
+      {
+        "mean_wait_min": 332.71370608784605,
+        "median_wait_min": 215.04574522353371,
+        "p90_wait_min": 788.7362625836194,
+        "max_wait_min": 830.0620622854026,
+        "starvation_count": 39,
+        "utilization_pct": 99.9861572502666,
+        "throughput_per_hour": 2.3786509787256036,
+        "day": 17
+      },
+      {
+        "mean_wait_min": 406.81025404767735,
+        "median_wait_min": 254.31831052054292,
+        "p90_wait_min": 840.4779076336669,
+        "max_wait_min": 879.4726301434948,
+        "starvation_count": 38,
+        "utilization_pct": 97.8620698261875,
+        "throughput_per_hour": 2.4349426381099715,
+        "day": 18
+      },
+      {
+        "mean_wait_min": 324.63983355088857,
+        "median_wait_min": 198.8117771519887,
+        "p90_wait_min": 646.5152108542984,
+        "max_wait_min": 708.7084719457891,
+        "starvation_count": 30,
+        "utilization_pct": 98.22681629414201,
+        "throughput_per_hour": 2.4504098995046593,
+        "day": 19
+      },
+      {
+        "mean_wait_min": 546.6718918576014,
+        "median_wait_min": 439.5743033687289,
+        "p90_wait_min": 1140.9873898176168,
+        "max_wait_min": 1166.7126573952105,
+        "starvation_count": 45,
+        "utilization_pct": 98.80137446103595,
+        "throughput_per_hour": 2.3860593787718423,
+        "day": 20
+      },
+      {
+        "mean_wait_min": 268.5015239483648,
+        "median_wait_min": 212.05249302420142,
+        "p90_wait_min": 599.9838481143704,
+        "max_wait_min": 613.073523706911,
+        "starvation_count": 27,
+        "utilization_pct": 98.93513256438563,
+        "throughput_per_hour": 2.606988783298579,
+        "day": 21
+      },
+      {
+        "mean_wait_min": 486.48697464899976,
+        "median_wait_min": 426.7331096208911,
+        "p90_wait_min": 960.101220630022,
+        "max_wait_min": 988.9496178339848,
+        "starvation_count": 44,
+        "utilization_pct": 99.35691517609436,
+        "throughput_per_hour": 2.5436024171462193,
+        "day": 22
+      },
+      {
+        "mean_wait_min": 376.4355248248917,
+        "median_wait_min": 301.75065081993984,
+        "p90_wait_min": 932.9384322889158,
+        "max_wait_min": 970.5652129842384,
+        "starvation_count": 30,
+        "utilization_pct": 93.07568313821008,
+        "throughput_per_hour": 2.0987733087191565,
+        "day": 23
+      },
+      {
+        "mean_wait_min": 323.75823591989695,
+        "median_wait_min": 178.48804320586882,
+        "p90_wait_min": 745.5707518769614,
+        "max_wait_min": 760.154667571833,
+        "starvation_count": 35,
+        "utilization_pct": 99.73528792034055,
+        "throughput_per_hour": 2.574312394140787,
+        "day": 24
+      },
+      {
+        "mean_wait_min": 462.5687782298522,
+        "median_wait_min": 437.5073264406982,
+        "p90_wait_min": 964.1537383202065,
+        "max_wait_min": 1017.0498099015026,
+        "starvation_count": 46,
+        "utilization_pct": 99.00514168971347,
+        "throughput_per_hour": 2.5936749961575565,
+        "day": 25
+      },
+      {
+        "mean_wait_min": 431.63209713300563,
+        "median_wait_min": 388.95892218720945,
+        "p90_wait_min": 881.1386902293282,
+        "max_wait_min": 930.9958973896591,
+        "starvation_count": 42,
+        "utilization_pct": 96.26449639983569,
+        "throughput_per_hour": 2.406635928809141,
+        "day": 26
+      },
+      {
+        "mean_wait_min": 391.48462112145756,
+        "median_wait_min": 330.53321691040895,
+        "p90_wait_min": 782.0926371834605,
+        "max_wait_min": 822.2911829384689,
+        "starvation_count": 40,
+        "utilization_pct": 98.82016770848547,
+        "throughput_per_hour": 2.5128866502392215,
+        "day": 27
+      },
+      {
+        "mean_wait_min": 367.48734850044553,
+        "median_wait_min": 360.0574447446123,
+        "p90_wait_min": 785.9551250969763,
+        "max_wait_min": 803.4852468355291,
+        "starvation_count": 36,
+        "utilization_pct": 95.66391453937455,
+        "throughput_per_hour": 2.476174730772792,
+        "day": 28
+      },
+      {
+        "mean_wait_min": 219.00302361519883,
+        "median_wait_min": 170.8781505282218,
+        "p90_wait_min": 499.5383087014062,
+        "max_wait_min": 543.3457450746903,
+        "starvation_count": 28,
+        "utilization_pct": 96.81856709216147,
+        "throughput_per_hour": 2.854076853159005,
+        "day": 29
+      },
+      {
+        "mean_wait_min": 227.93205399126202,
+        "median_wait_min": 131.06175771455668,
+        "p90_wait_min": 597.833188730211,
+        "max_wait_min": 659.167784206806,
+        "starvation_count": 26,
+        "utilization_pct": 96.40796071357899,
+        "throughput_per_hour": 2.684853110857669,
+        "day": 30
+      },
+      {
+        "mean_wait_min": 193.38452629573501,
+        "median_wait_min": 124.13405770313588,
+        "p90_wait_min": 569.4251093296286,
+        "max_wait_min": 601.612894146577,
+        "starvation_count": 25,
+        "utilization_pct": 92.17746795778372,
+        "throughput_per_hour": 2.466699070859699,
+        "day": 31
+      },
+      {
+        "mean_wait_min": 624.8040708298996,
+        "median_wait_min": 692.3798304046704,
+        "p90_wait_min": 1170.1276025248033,
+        "max_wait_min": 1271.3208366684944,
+        "starvation_count": 48,
+        "utilization_pct": 99.08387004039302,
+        "throughput_per_hour": 2.314826516191076,
+        "day": 32
+      },
+      {
+        "mean_wait_min": 374.82074957796084,
+        "median_wait_min": 235.40831313190506,
+        "p90_wait_min": 722.4402100312984,
+        "max_wait_min": 744.3872824077685,
+        "starvation_count": 38,
+        "utilization_pct": 95.0894660537228,
+        "throughput_per_hour": 2.525268891112769,
+        "day": 33
+      },
+      {
+        "mean_wait_min": 287.4011214384887,
+        "median_wait_min": 245.66060179261535,
+        "p90_wait_min": 722.3515493602142,
+        "max_wait_min": 819.2757357886778,
+        "starvation_count": 28,
+        "utilization_pct": 99.86298073974929,
+        "throughput_per_hour": 2.4644567115795786,
+        "day": 34
+      },
+      {
+        "mean_wait_min": 356.2453924437347,
+        "median_wait_min": 418.3233999169982,
+        "p90_wait_min": 874.7462208287877,
+        "max_wait_min": 950.0752275761972,
+        "starvation_count": 37,
+        "utilization_pct": 98.01083363074208,
+        "throughput_per_hour": 2.7594499898216194,
+        "day": 35
+      },
+      {
+        "mean_wait_min": 350.8246530683868,
+        "median_wait_min": 227.96495068358314,
+        "p90_wait_min": 775.6125074256241,
+        "max_wait_min": 832.3842022185092,
+        "starvation_count": 35,
+        "utilization_pct": 99.06866176425349,
+        "throughput_per_hour": 2.4035441916743414,
+        "day": 36
+      },
+      {
+        "mean_wait_min": 253.33410207994726,
+        "median_wait_min": 98.16381544615177,
+        "p90_wait_min": 613.0610906621168,
+        "max_wait_min": 696.3870781791353,
+        "starvation_count": 25,
+        "utilization_pct": 95.45999211846944,
+        "throughput_per_hour": 2.5254775814885604,
+        "day": 37
+      },
+      {
+        "mean_wait_min": 193.32058704228814,
+        "median_wait_min": 83.82004684626025,
+        "p90_wait_min": 486.4111360894214,
+        "max_wait_min": 549.4881372519537,
+        "starvation_count": 19,
+        "utilization_pct": 95.89531209166171,
+        "throughput_per_hour": 2.7483025319963796,
+        "day": 38
+      },
+      {
+        "mean_wait_min": 338.61673009774205,
+        "median_wait_min": 214.2497033905035,
+        "p90_wait_min": 749.5696166133216,
+        "max_wait_min": 841.5140542235779,
+        "starvation_count": 39,
+        "utilization_pct": 98.00711866343507,
+        "throughput_per_hour": 2.4035962389894237,
+        "day": 39
+      },
+      {
+        "mean_wait_min": 219.07680497634422,
+        "median_wait_min": 85.3003107884316,
+        "p90_wait_min": 514.7402028803027,
+        "max_wait_min": 548.3447841526735,
+        "starvation_count": 20,
+        "utilization_pct": 96.7809298237431,
+        "throughput_per_hour": 2.66639975751924,
+        "day": 40
+      },
+      {
+        "mean_wait_min": 275.5816514541065,
+        "median_wait_min": 266.58204452200664,
+        "p90_wait_min": 697.4753332079607,
+        "max_wait_min": 785.856263584762,
+        "starvation_count": 26,
+        "utilization_pct": 96.92710920858974,
+        "throughput_per_hour": 2.418849800597657,
+        "day": 41
+      },
+      {
+        "mean_wait_min": 351.8578818888031,
+        "median_wait_min": 139.71420073610062,
+        "p90_wait_min": 746.5952344827629,
+        "max_wait_min": 783.5056931407441,
+        "starvation_count": 30,
+        "utilization_pct": 99.35918953932175,
+        "throughput_per_hour": 2.627760412114855,
+        "day": 42
+      },
+      {
+        "mean_wait_min": 259.2240575371881,
+        "median_wait_min": 179.80448570626118,
+        "p90_wait_min": 581.7223209330823,
+        "max_wait_min": 651.54552424951,
+        "starvation_count": 32,
+        "utilization_pct": 91.96168597587987,
+        "throughput_per_hour": 2.3773730801071182,
+        "day": 43
+      },
+      {
+        "mean_wait_min": 223.44939345951562,
+        "median_wait_min": 130.50260645867354,
+        "p90_wait_min": 479.0555936255619,
+        "max_wait_min": 541.5986293338026,
+        "starvation_count": 25,
+        "utilization_pct": 97.70556720585121,
+        "throughput_per_hour": 2.6616018023707197,
+        "day": 44
+      },
+      {
+        "mean_wait_min": 196.34075538820278,
+        "median_wait_min": 127.29757938637846,
+        "p90_wait_min": 550.343578365997,
+        "max_wait_min": 653.5193914917468,
+        "starvation_count": 25,
+        "utilization_pct": 98.4742777857155,
+        "throughput_per_hour": 2.667269151452167,
+        "day": 45
+      },
+      {
+        "mean_wait_min": 203.8996836774871,
+        "median_wait_min": 58.39787360462111,
+        "p90_wait_min": 600.9095071959847,
+        "max_wait_min": 647.217621555252,
+        "starvation_count": 19,
+        "utilization_pct": 96.8821800391574,
+        "throughput_per_hour": 2.5281540781968603,
+        "day": 46
+      },
+      {
+        "mean_wait_min": 261.9646257234697,
+        "median_wait_min": 161.21853755463286,
+        "p90_wait_min": 626.2532546562192,
+        "max_wait_min": 650.6763806268318,
+        "starvation_count": 30,
+        "utilization_pct": 98.73420259857369,
+        "throughput_per_hour": 2.558164479065904,
+        "day": 47
+      },
+      {
+        "mean_wait_min": 247.05859513096743,
+        "median_wait_min": 195.6709073175275,
+        "p90_wait_min": 630.8576324164017,
+        "max_wait_min": 700.8583155277694,
+        "starvation_count": 30,
+        "utilization_pct": 96.16584023805682,
+        "throughput_per_hour": 2.4591324669797143,
+        "day": 48
+      },
+      {
+        "mean_wait_min": 236.66050912543352,
+        "median_wait_min": 179.49165762270053,
+        "p90_wait_min": 537.9590767699175,
+        "max_wait_min": 580.7512852159448,
+        "starvation_count": 21,
+        "utilization_pct": 95.91215953235739,
+        "throughput_per_hour": 2.338621450157254,
+        "day": 49
+      }
+    ],
+    "DYNAMIC_AGING": [
+      {
+        "mean_wait_min": 265.86296578582653,
+        "median_wait_min": 279.7136935361415,
+        "p90_wait_min": 510.4736210969691,
+        "max_wait_min": 570.3104615084146,
+        "starvation_count": 37,
+        "utilization_pct": 99.74561842281115,
+        "throughput_per_hour": 2.5930472621997818,
+        "day": 0
+      },
+      {
+        "mean_wait_min": 291.4427769032544,
+        "median_wait_min": 316.4087853031248,
+        "p90_wait_min": 589.9558917960068,
+        "max_wait_min": 649.9177121153521,
+        "starvation_count": 36,
+        "utilization_pct": 97.54433900106882,
+        "throughput_per_hour": 2.657685854422424,
+        "day": 1
+      },
+      {
+        "mean_wait_min": 376.4244364060005,
+        "median_wait_min": 321.0130402561411,
+        "p90_wait_min": 695.0333669840287,
+        "max_wait_min": 763.3506394199264,
+        "starvation_count": 39,
+        "utilization_pct": 95.64395329696092,
+        "throughput_per_hour": 2.2563497134367365,
+        "day": 2
+      },
+      {
+        "mean_wait_min": 425.28237029577275,
+        "median_wait_min": 419.46396711681547,
+        "p90_wait_min": 849.3195345322238,
+        "max_wait_min": 925.4458281618831,
+        "starvation_count": 53,
+        "utilization_pct": 98.42147220647564,
+        "throughput_per_hour": 2.656942462175349,
+        "day": 3
+      },
+      {
+        "mean_wait_min": 269.0262781260266,
+        "median_wait_min": 259.6652862925689,
+        "p90_wait_min": 490.8847983233924,
+        "max_wait_min": 548.7873296086759,
+        "starvation_count": 37,
+        "utilization_pct": 94.46369842926181,
+        "throughput_per_hour": 2.5252683172911836,
+        "day": 4
+      },
+      {
+        "mean_wait_min": 199.50442409655003,
+        "median_wait_min": 171.99208554580792,
+        "p90_wait_min": 382.9422090103625,
+        "max_wait_min": 454.98919472045804,
+        "starvation_count": 32,
+        "utilization_pct": 96.7840024908054,
+        "throughput_per_hour": 2.7734435256413916,
+        "day": 5
+      },
+      {
+        "mean_wait_min": 287.28531473488033,
+        "median_wait_min": 279.2164298975407,
+        "p90_wait_min": 519.9407528723098,
+        "max_wait_min": 646.817152813846,
+        "starvation_count": 45,
+        "utilization_pct": 98.74755175737718,
+        "throughput_per_hour": 2.8276341382427663,
+        "day": 6
+      },
+      {
+        "mean_wait_min": 384.92652877729444,
+        "median_wait_min": 407.98505871478744,
+        "p90_wait_min": 701.3356140619982,
+        "max_wait_min": 747.0530061291429,
+        "starvation_count": 41,
+        "utilization_pct": 96.64746226701155,
+        "throughput_per_hour": 2.327409321516233,
+        "day": 7
+      },
+      {
+        "mean_wait_min": 262.70215641821767,
+        "median_wait_min": 285.97531893250573,
+        "p90_wait_min": 458.8060314376598,
+        "max_wait_min": 564.7490780618493,
+        "starvation_count": 37,
+        "utilization_pct": 99.69374748295465,
+        "throughput_per_hour": 2.8576072347931403,
+        "day": 8
+      },
+      {
+        "mean_wait_min": 137.33229841285936,
+        "median_wait_min": 144.49257362866086,
+        "p90_wait_min": 269.82854713032685,
+        "max_wait_min": 325.5054683754699,
+        "starvation_count": 23,
+        "utilization_pct": 98.4793329374157,
+        "throughput_per_hour": 2.9705791103546053,
+        "day": 9
+      },
+      {
+        "mean_wait_min": 234.58504256664634,
+        "median_wait_min": 206.64484740247516,
+        "p90_wait_min": 465.3404809459804,
+        "max_wait_min": 538.6206846422381,
+        "starvation_count": 33,
+        "utilization_pct": 99.98233269344577,
+        "throughput_per_hour": 2.7097344018503797,
+        "day": 10
+      },
+      {
+        "mean_wait_min": 199.171106801976,
+        "median_wait_min": 233.0635490779033,
+        "p90_wait_min": 364.0420073558076,
+        "max_wait_min": 398.6974086073019,
+        "starvation_count": 29,
+        "utilization_pct": 95.77513907407234,
+        "throughput_per_hour": 2.9219452449989887,
+        "day": 11
+      },
+      {
+        "mean_wait_min": 354.1686596875528,
+        "median_wait_min": 351.88441172976616,
+        "p90_wait_min": 630.2489062086453,
+        "max_wait_min": 662.3413012929069,
+        "starvation_count": 37,
+        "utilization_pct": 95.96538301024655,
+        "throughput_per_hour": 2.2047568918435028,
+        "day": 12
+      },
+      {
+        "mean_wait_min": 373.2917107854062,
+        "median_wait_min": 393.2787182212498,
+        "p90_wait_min": 711.8289404815841,
+        "max_wait_min": 747.769338395319,
+        "starvation_count": 43,
+        "utilization_pct": 98.18954511118399,
+        "throughput_per_hour": 2.467325338531077,
+        "day": 13
+      },
+      {
+        "mean_wait_min": 337.38800002583304,
+        "median_wait_min": 320.9961676000281,
+        "p90_wait_min": 643.1444639137576,
+        "max_wait_min": 706.2730878569638,
+        "starvation_count": 41,
+        "utilization_pct": 95.14077569270253,
+        "throughput_per_hour": 2.45480261398871,
+        "day": 14
+      },
+      {
+        "mean_wait_min": 317.6630173626101,
+        "median_wait_min": 334.74569870190385,
+        "p90_wait_min": 616.3523623909575,
+        "max_wait_min": 636.8129836006924,
+        "starvation_count": 41,
+        "utilization_pct": 99.16586822532584,
+        "throughput_per_hour": 2.64710515181689,
+        "day": 15
+      },
+      {
+        "mean_wait_min": 361.49532443738644,
+        "median_wait_min": 309.0942826278513,
+        "p90_wait_min": 724.3803309941471,
+        "max_wait_min": 771.3107050921492,
+        "starvation_count": 45,
+        "utilization_pct": 94.03675742945366,
+        "throughput_per_hour": 2.49582999488769,
+        "day": 16
+      },
+      {
+        "mean_wait_min": 344.72493316713667,
+        "median_wait_min": 364.37485997584224,
+        "p90_wait_min": 576.8609385816849,
+        "max_wait_min": 688.7427923127858,
+        "starvation_count": 44,
+        "utilization_pct": 99.9861572502666,
+        "throughput_per_hour": 2.3786509787256036,
+        "day": 17
+      },
+      {
+        "mean_wait_min": 390.1797916216396,
+        "median_wait_min": 387.12329641131475,
+        "p90_wait_min": 691.2690820362452,
+        "max_wait_min": 751.570602334353,
+        "starvation_count": 47,
+        "utilization_pct": 97.8620698261875,
+        "throughput_per_hour": 2.4349426381099715,
+        "day": 18
+      },
+      {
+        "mean_wait_min": 344.04085856362354,
+        "median_wait_min": 343.98569600650285,
+        "p90_wait_min": 612.0348014041319,
+        "max_wait_min": 626.8439060655057,
+        "starvation_count": 40,
+        "utilization_pct": 98.22681629414201,
+        "throughput_per_hour": 2.4504098995046597,
+        "day": 19
+      },
+      {
+        "mean_wait_min": 568.3302538352593,
+        "median_wait_min": 609.4861646863696,
+        "p90_wait_min": 1052.0141428938887,
+        "max_wait_min": 1141.3757019957925,
+        "starvation_count": 56,
+        "utilization_pct": 98.80137446103596,
+        "throughput_per_hour": 2.386059378771842,
+        "day": 20
+      },
+      {
+        "mean_wait_min": 275.4587119776874,
+        "median_wait_min": 304.91997867307066,
+        "p90_wait_min": 432.1433963781376,
+        "max_wait_min": 471.155583332795,
+        "starvation_count": 37,
+        "utilization_pct": 98.93513256438563,
+        "throughput_per_hour": 2.606988783298579,
+        "day": 21
+      },
+      {
+        "mean_wait_min": 503.44491241412663,
+        "median_wait_min": 568.626215029934,
+        "p90_wait_min": 821.4949214855691,
+        "max_wait_min": 872.159758547945,
+        "starvation_count": 54,
+        "utilization_pct": 99.35691517609435,
+        "throughput_per_hour": 2.54360241714622,
+        "day": 22
+      },
+      {
+        "mean_wait_min": 422.34228706499897,
+        "median_wait_min": 485.1278080114027,
+        "p90_wait_min": 803.4191950390513,
+        "max_wait_min": 876.8059885468258,
+        "starvation_count": 41,
+        "utilization_pct": 93.07568313821008,
+        "throughput_per_hour": 2.098773308719156,
+        "day": 23
+      },
+      {
+        "mean_wait_min": 338.27730576814923,
+        "median_wait_min": 383.20659318636024,
+        "p90_wait_min": 577.1167385132388,
+        "max_wait_min": 599.0587681141267,
+        "starvation_count": 40,
+        "utilization_pct": 99.73528792034055,
+        "throughput_per_hour": 2.5743123941407853,
+        "day": 24
+      },
+      {
+        "mean_wait_min": 459.3372464301329,
+        "median_wait_min": 491.98508417134065,
+        "p90_wait_min": 887.2736342117125,
+        "max_wait_min": 971.2618176694336,
+        "starvation_count": 50,
+        "utilization_pct": 99.00514168971345,
+        "throughput_per_hour": 2.593674996157557,
+        "day": 25
+      },
+      {
+        "mean_wait_min": 421.68344417758806,
+        "median_wait_min": 427.4580063894493,
+        "p90_wait_min": 819.394601603645,
+        "max_wait_min": 909.4551309878018,
+        "starvation_count": 47,
+        "utilization_pct": 96.26449639983569,
+        "throughput_per_hour": 2.406635928809141,
+        "day": 26
+      },
+      {
+        "mean_wait_min": 399.6012819510668,
+        "median_wait_min": 417.49976368675783,
+        "p90_wait_min": 673.4516328805412,
+        "max_wait_min": 759.78079544355,
+        "starvation_count": 49,
+        "utilization_pct": 98.8201677084855,
+        "throughput_per_hour": 2.512886650239221,
+        "day": 27
+      },
+      {
+        "mean_wait_min": 343.7281858804032,
+        "median_wait_min": 368.99403360315625,
+        "p90_wait_min": 648.2623646827212,
+        "max_wait_min": 709.7274432506192,
+        "starvation_count": 40,
+        "utilization_pct": 95.66391453937453,
+        "throughput_per_hour": 2.476174730772792,
+        "day": 28
+      },
+      {
+        "mean_wait_min": 227.2709918995343,
+        "median_wait_min": 262.61590311188496,
+        "p90_wait_min": 377.1480811848259,
+        "max_wait_min": 406.8376326692277,
+        "starvation_count": 36,
+        "utilization_pct": 96.81856709216147,
+        "throughput_per_hour": 2.8540768531590053,
+        "day": 29
+      },
+      {
+        "mean_wait_min": 226.1697844553337,
+        "median_wait_min": 204.6283852357046,
+        "p90_wait_min": 475.8507627983078,
+        "max_wait_min": 516.1022878900151,
+        "starvation_count": 31,
+        "utilization_pct": 96.40796071357896,
+        "throughput_per_hour": 2.6848531108576683,
+        "day": 30
+      },
+      {
+        "mean_wait_min": 203.3122866511659,
+        "median_wait_min": 240.27847726746646,
+        "p90_wait_min": 443.9790554842326,
+        "max_wait_min": 501.22625840224237,
+        "starvation_count": 26,
+        "utilization_pct": 92.17746795778369,
+        "throughput_per_hour": 2.4666990708596983,
+        "day": 31
+      },
+      {
+        "mean_wait_min": 587.7001034760394,
+        "median_wait_min": 577.9282791369579,
+        "p90_wait_min": 1025.4898007146269,
+        "max_wait_min": 1097.9601123848213,
+        "starvation_count": 58,
+        "utilization_pct": 99.08387004039302,
+        "throughput_per_hour": 2.3148265161910766,
+        "day": 32
+      },
+      {
+        "mean_wait_min": 353.42964523625176,
+        "median_wait_min": 380.0324481413911,
+        "p90_wait_min": 623.3686595965632,
+        "max_wait_min": 699.0119120416035,
+        "starvation_count": 44,
+        "utilization_pct": 95.0894660537228,
+        "throughput_per_hour": 2.525268891112769,
+        "day": 33
+      },
+      {
+        "mean_wait_min": 335.45091458985496,
+        "median_wait_min": 361.42586226194294,
+        "p90_wait_min": 642.196741673217,
+        "max_wait_min": 697.284739708212,
+        "starvation_count": 37,
+        "utilization_pct": 99.86298073974929,
+        "throughput_per_hour": 2.464456711579579,
+        "day": 34
+      },
+      {
+        "mean_wait_min": 339.5815999333094,
+        "median_wait_min": 306.3625844839816,
+        "p90_wait_min": 707.9870451830463,
+        "max_wait_min": 835.0824639644762,
+        "starvation_count": 47,
+        "utilization_pct": 98.01083363074208,
+        "throughput_per_hour": 2.7594499898216207,
+        "day": 35
+      },
+      {
+        "mean_wait_min": 339.6169799715887,
+        "median_wait_min": 347.89453966582073,
+        "p90_wait_min": 576.1424790412924,
+        "max_wait_min": 623.9280004733187,
+        "starvation_count": 43,
+        "utilization_pct": 99.06866176425349,
+        "throughput_per_hour": 2.4035441916743427,
+        "day": 36
+      },
+      {
+        "mean_wait_min": 253.23542103949075,
+        "median_wait_min": 189.41118229287287,
+        "p90_wait_min": 561.0587657029618,
+        "max_wait_min": 633.4779378168516,
+        "starvation_count": 36,
+        "utilization_pct": 95.45999211846946,
+        "throughput_per_hour": 2.525477581488561,
+        "day": 37
+      },
+      {
+        "mean_wait_min": 198.0622445384493,
+        "median_wait_min": 216.93511909498974,
+        "p90_wait_min": 363.53879261877563,
+        "max_wait_min": 406.69151132488423,
+        "starvation_count": 32,
+        "utilization_pct": 95.8953120916617,
+        "throughput_per_hour": 2.748302531996379,
+        "day": 38
+      },
+      {
+        "mean_wait_min": 348.6980889689224,
+        "median_wait_min": 333.9163735873274,
+        "p90_wait_min": 669.9047661409135,
+        "max_wait_min": 758.9779263702155,
+        "starvation_count": 43,
+        "utilization_pct": 98.00711866343508,
+        "throughput_per_hour": 2.403596238989424,
+        "day": 39
+      },
+      {
+        "mean_wait_min": 223.5683637583377,
+        "median_wait_min": 200.18813561039713,
+        "p90_wait_min": 454.4849718129896,
+        "max_wait_min": 527.6021916985098,
+        "starvation_count": 30,
+        "utilization_pct": 96.78092982374311,
+        "throughput_per_hour": 2.6663997575192404,
+        "day": 40
+      },
+      {
+        "mean_wait_min": 269.6331336653478,
+        "median_wait_min": 298.4797767924581,
+        "p90_wait_min": 535.2693671616664,
+        "max_wait_min": 625.4967793689736,
+        "starvation_count": 34,
+        "utilization_pct": 96.92710920858975,
+        "throughput_per_hour": 2.418849800597657,
+        "day": 41
+      },
+      {
+        "mean_wait_min": 379.67187534023856,
+        "median_wait_min": 391.6876848987221,
+        "p90_wait_min": 669.4096965629572,
+        "max_wait_min": 717.542787290212,
+        "starvation_count": 47,
+        "utilization_pct": 99.35918953932175,
+        "throughput_per_hour": 2.627760412114854,
+        "day": 42
+      },
+      {
+        "mean_wait_min": 282.3179842450489,
+        "median_wait_min": 295.64578230922484,
+        "p90_wait_min": 521.286704601029,
+        "max_wait_min": 559.169739853405,
+        "starvation_count": 37,
+        "utilization_pct": 91.96168597587985,
+        "throughput_per_hour": 2.377373080107118,
+        "day": 43
+      },
+      {
+        "mean_wait_min": 232.59043693109288,
+        "median_wait_min": 222.02321651218995,
+        "p90_wait_min": 412.45566745136784,
+        "max_wait_min": 468.4206115334604,
+        "starvation_count": 38,
+        "utilization_pct": 97.70556720585118,
+        "throughput_per_hour": 2.6616018023707184,
+        "day": 44
+      },
+      {
+        "mean_wait_min": 185.83111029881343,
+        "median_wait_min": 195.7997265080341,
+        "p90_wait_min": 409.74829549210887,
+        "max_wait_min": 444.4685197926892,
+        "starvation_count": 28,
+        "utilization_pct": 98.4742777857155,
+        "throughput_per_hour": 2.667269151452167,
+        "day": 45
+      },
+      {
+        "mean_wait_min": 221.88777218080438,
+        "median_wait_min": 222.7453919715809,
+        "p90_wait_min": 429.8031810245453,
+        "max_wait_min": 445.03404607185644,
+        "starvation_count": 35,
+        "utilization_pct": 96.88218003915742,
+        "throughput_per_hour": 2.5281540781968594,
+        "day": 46
+      },
+      {
+        "mean_wait_min": 261.0491727389299,
+        "median_wait_min": 209.58365940062646,
+        "p90_wait_min": 528.3038610957252,
+        "max_wait_min": 636.5999131491076,
+        "starvation_count": 31,
+        "utilization_pct": 98.73420259857372,
+        "throughput_per_hour": 2.558164479065905,
+        "day": 47
+      },
+      {
+        "mean_wait_min": 283.71489932176354,
+        "median_wait_min": 331.23123074712026,
+        "p90_wait_min": 550.3545022619321,
+        "max_wait_min": 602.2145693945566,
+        "starvation_count": 32,
+        "utilization_pct": 96.16584023805679,
+        "throughput_per_hour": 2.459132466979714,
+        "day": 48
+      },
+      {
+        "mean_wait_min": 236.93490413630153,
+        "median_wait_min": 196.17927369123777,
+        "p90_wait_min": 462.96726581616645,
+        "max_wait_min": 514.1075359799154,
+        "starvation_count": 24,
+        "utilization_pct": 95.91215953235739,
+        "throughput_per_hour": 2.338621450157254,
+        "day": 49
+      }
+    ]
+  }
+}

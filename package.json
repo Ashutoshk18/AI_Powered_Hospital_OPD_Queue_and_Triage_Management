@@ -1,0 +1,27 @@
+{
+  "name": "hospital-opd-management",
+  "version": "1.0.0",
+  "description": "AI-Powered Hospital OPD Queue and Triage Management System",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev:all",
+    "dev:all": "concurrently -n \"api,web\" -c \"blue,green\" \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build": "npm --prefix apps/api run build && npm --prefix apps/web run build",
+    "test": "npm --prefix apps/api run test && npm --prefix apps/web run test",
+    "test:api": "npm --prefix apps/api run test",
+    "test:web": "npm --prefix apps/web run test",
+    "db:migrate": "npm --prefix apps/api run prisma:migrate",
+    "db:generate": "npm --prefix apps/api run prisma:generate",
+    "db:seed": "npm --prefix apps/api run prisma:seed",
+    "lint": "npm --prefix apps/api run lint && npm --prefix apps/web run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
